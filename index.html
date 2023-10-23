@@ -1,0 +1,72 @@
+<!-- FILEPATH: index.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Need to add stripe and paypal functionality, maybe even a cashapp link -->
+        <!-- <script src="https://js.stripe.com/v3/"></script> -->
+    </head>
+    <body>
+        <div class="page-container">
+            <header class="parent-element">
+                <div>
+                    <h1 class="child-element">Conscientia Collegium</h1>
+                </div>
+            </header>
+        <main>
+            <div class="parent-element">
+                <h2 class="child-element">Welcome to my passion project!</h2>
+            </div>
+            <!-- <button id="checkout-button">Pay with Card</button> -->
+            <button type="button" disabled> Donate Value (Coming Soon!) </button>
+            <div class="parent-element">
+                <p1 class="child-element">This is a reference website for all scientific research that supports a flat<br>
+                    topographical plane earth. The resources are hyper-linked so as to create a mindmap<br>
+                    of all the information to assist the pleb in becoming more knowlegeable on the topic<br>
+                    This will be updated periodcically and only with trusted sources.</p1>
+            </div>
+        </main>
+        <div class="centered-list" style="text-align: center; margin: 14px auto 0;">
+            <ul class="link-list">
+                <li><a href="gravity.html"><h2>Gravity</h2></a></li>
+                <li><a href="relativity.html"><h2>Relativity</h2></a></li>
+                <li><a href="curvature.html"><h2>Curvature</h2></a></li>
+                <!-- <li><a href="ham-radio.html"><h2>Ham Radio</h2></a></li> -->
+                <!-- <li><a href="firmament.html"><h2>The Firmament</h2></a></li> -->
+                <li><a href="light-wave-propagation.html"><h2>Light Wave Propagation</h2></a></li>
+                <li><a href="bible-verses.html"><h2>Bible Verses</h2></a></li>
+            </ul>
+        </div>
+        <!-- BEGIN: form -->
+            <div class="form-container">
+                <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                    <div class="parent-element" style="text-align: center; margin: 0px 0px 14px;">
+                        <h2><label for="title">Send us feedback!</label></h2>
+                    </div>                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="message"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        <!-- END: form -->
+
+        
+            <div class="parent-element">
+                <nav class="child-element">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+        <footer>
+            <p>&copy; 2023 Conscientia Collegium</p>
+        </footer>
+    </div>
+    </body>
+</html>
