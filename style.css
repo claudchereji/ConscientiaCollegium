@@ -25,7 +25,7 @@
 
     /* Style the parent container */
     .parent-element:hover p1 {
-        font-size: 20px; /* Increase font size on hover */
+        font-size: 18.5px; /* Increase font size on hover */
         transition: font-size 0.8s; /* Add a transition for smooth hover effect */
     }
   
