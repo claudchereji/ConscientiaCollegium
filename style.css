@@ -1,302 +1,413 @@
 /* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Apply a background color and font styles to the entire page */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-    /* Style the p1 tag */
-    .parent-element p1 {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        color: #fff;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /* Style the parent container */
-    .parent-element:hover p1 {
-        font-size: 18.5px; /* Increase font size on hover */
-        transition: font-size 0.8s; /* Add a transition for smooth hover effect */
-    }
-  
+/* Apply a background color and font styles to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
 
-  /* Style the page container and center it */
-  .page-container {
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Styles for mobile devices */
+/* Font size for mobile devices */
+body {
+  font-size: 16px;
+}
+
+/* Style the page container and center it */
+.page-container {
+  max-width: 100%; /* Use 100% width for mobile */
+  padding: 10px; /* Reduce padding for mobile */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header section */
+header {
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+/* Style the h1 inside the header */
+header h1 {
+  font-size: 24px;
+}
+
+/* Style the main content area */
+main {
+  padding: 10px;
+}
+
+/* Style the h2 inside main */
+main h2 {
+  font-size: 20px; /* Slightly smaller font for mobile */
+  text-align: center;
+}
+
+/* Style the paragraph text inside main */
+main p {
+  font-size: 16px;
+}
+
+/* Style the link list */
+.link-list li a {
+  padding: 10px;
+  margin: 5px 0; /* Increase margin for touch-friendliness */
+}
+
+/* Style the form container */
+.form-container {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px; /* Match page container radius for consistency */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form title */
+.form-container h2 {
+  font-size: 20px; /* Slightly smaller font for mobile */
+  margin-bottom: 10px;
+}
+
+/* Style the form labels and input fields */
+form label,
+form input[type="text"],
+form input[type="email"] {
+  margin-bottom: 5px; /* Reduce margin for mobile */
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+  padding: 10px 15px; /* Slightly smaller button for mobile */
+  font-size: 16px; /* Slightly smaller font for mobile */
+}
+
+/* Style the navigation links */
+nav a {
+  margin: 0 5px; /* Increase margin for touch-friendliness */
+  font-size: 16px;
+}
+
+/* Style the footer */
+footer {
+  padding: 5px 0; /* Reduce padding for mobile */
+  border-radius: 5px;
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media screen and (min-width: 768px) {
+  /* Add your desktop-specific styles here */
+  /* For example, increase font sizes, adjust margins, and more */
+
+  /* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color and font styles to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+  /* Style the p1 tag */
+  .parent-element p1 {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #fff;
   }
-  
-  /* Style the header section */
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    border-radius: 5px;
+
+  /* Style the parent container */
+  .parent-element:hover p1 {
+      font-size: 18.5px; /* Increase font size on hover */
+      transition: font-size 0.8s; /* Add a transition for smooth hover effect */
   }
+
+
+/* Style the page container and center it */
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header section */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+/* Style the h1 inside the header */
+header h1 {
+  font-size: 36px;
+}
+
+/* Style the main content area */
+main {
+  padding: 20px;
+}
+
+/* Style the h2 inside main */
+main h2 {
+  font-size: 24px;
+  text-align: center;
   
-  /* Style the h1 inside the header */
-  header h1 {
-    font-size: 36px;
-  }
-  
-  /* Style the main content area */
-  main {
-    padding: 20px;
-  }
-  
-  /* Style the h2 inside main */
-  main h2 {
-    font-size: 24px;
-    text-align: center;
-    
-  }
-  
-  /* Style the paragraph text inside main */
-  main p {
-    font-size: 16px;
-  }
-  
-  /* Style the centered grid */
-  .centered-list {
-    text-align: center;
-  }
-  
+}
+
+/* Style the paragraph text inside main */
+main p {
+  font-size: 16px;
+}
+
+/* Style the centered grid */
+.centered-list {
+  text-align: center;
+}
+
 /* Style the link list */
 .link-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Style the links in the link list */
 .link-list li a {
-    display: block;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    margin: 10px 0;
-    border-radius: 5px;
-    transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+  display: block;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
 }
 
 .link-list li a:hover {
-    font-size: 22px; /* Increase font size on hover */
-    color: #78dcdc; /* Change text color to white on hover */
+  font-size: 22px; /* Increase font size on hover */
+  color: #78dcdc; /* Change text color to white on hover */
 }
-  
-  /* Style the form container */
-  .form-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Style the form elements */
-  form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  /* Style the form labels and input fields */
-  form label,
-  form input[type="text"],
-  form input[type="email"] {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the submit button */
-  form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
 
-  /* Style the navigation links */
+/* Style the form container */
+.form-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style the form elements */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style the form labels and input fields */
+form label,
+form input[type="text"],
+form input[type="email"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style the navigation links */
 nav a {
-    text-decoration: none;
-    color: #eeeeee;
-    margin: 0 10px;
-    font-size: 18px;
-    transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
-  }
-  
-  /* Add hover effect to navigation links */
-  nav a:hover {
-    font-size: 22px; /* Increase font size on hover */
-    color: #78dcdc; /* Change text color to white on hover */
-  }
-  
-  /* Style the footer */
-  footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    border-radius: 5px;
-  }
+  text-decoration: none;
+  color: #eeeeee;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+}
+
+/* Add hover effect to navigation links */
+nav a:hover {
+  font-size: 22px; /* Increase font size on hover */
+  color: #78dcdc; /* Change text color to white on hover */
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+}
 /* Style the link list with the "pdf-list" class */
 .pdf-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    /* Style the links in the "pdf-list" class */
-    .pdf-list li a {
-        display: block;
-        padding: 10px;
-        background-color: #333;
-        text-align: center;
-        color: #fff;
-        text-decoration: none;
-        margin: 10px 0;
-        border-radius: 5px;
-        transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
-    }
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  /* Style the links in the "pdf-list" class */
+  .pdf-list li a {
+      display: block;
+      padding: 10px;
+      background-color: #333;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      margin: 10px 0;
+      border-radius: 5px;
+      transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+  }
 
-    .pdf-list li a:hover {
-        font-size: 22px; /* Increase font size on hover */
-        color: #78dcdc; /* Change text color to white on hover */
-    }
-    .pdf-list li a:hover {
-        font-size: 22px;
-        color: #78dcdc;
-        margin: 10px 10;
-        padding: 15px 0;
-        transition: margin 0.3s, padding 0.3s; /* Add transition for smooth effect */
-    }
+  .pdf-list li a:hover {
+      font-size: 22px; /* Increase font size on hover */
+      color: #78dcdc; /* Change text color to white on hover */
+  }
+  .pdf-list li a:hover {
+      font-size: 22px;
+      color: #78dcdc;
+      margin: 10px 10;
+      padding: 15px 0;
+      transition: margin 0.3s, padding 0.3s; /* Add transition for smooth effect */
+  }
 /* Style the elements with the "parent-element" class */
 .parent-element {
-        background: linear-gradient(to bottom left, #333, #8f8d8d);
-        color: #fff;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        text-align: center;
-    }
+      background: linear-gradient(to bottom left, #333, #8f8d8d);
+      color: #fff;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      text-align: center;
+  }
 /* Style the "back-button" class */
 .back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 5px;
-    font-size: 18px;
-    transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
-  }
-  
-  /* Style the disabled button */
-  button[disabled] {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #8c3434; /* Use a different background color for disabled state */
-    color: #fff; /* Adjust text color for disabled state */
-    border: none;
-    border-radius: 5px;
-    cursor: not-allowed;
-    margin: 10px 5px;
-    font-size: 18px;
-    transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
-  }
-  
-  /* Add hover effect for both buttons */
-  .back-button:hover,
-  button[disabled]:hover {
-    background-color: #262020;
-    font-size: 22px; /* Increase font size on hover */
-    color: #78dcdc; /* Change text color to white on hover */
-  }
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px;
+  font-size: 18px;
+  transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+}
 
-  
-  /* Style the form container */
+/* Style the disabled button */
+button[disabled] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8c3434; /* Use a different background color for disabled state */
+  color: #fff; /* Adjust text color for disabled state */
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+  margin: 10px 5px;
+  font-size: 18px;
+  transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+}
+
+/* Add hover effect for both buttons */
+.back-button:hover,
+button[disabled]:hover {
+  background-color: #262020;
+  font-size: 22px; /* Increase font size on hover */
+  color: #78dcdc; /* Change text color to white on hover */
+}
+
+
+/* Style the form container */
 .form-container {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px; /* Reduced padding */
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style the form title */
-  .form-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px; /* Reduced margin */
-  }
-  
-  /* Style the form labels */
-  .form-container label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  /* Style the form inputs */
-  .form-container input[type="text"],
-  .form-container input[type="email"] {
-    width: 100%;
-    padding: 8px; /* Reduced padding */
-    margin-bottom: 10px; /* Reduced margin */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  /* Style the submit button */
-  .form-container input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  
-  /* Add hover effect to the submit button */
-  .form-container input[type="submit"]:hover {
-    background-color: #555;
-    color:#78dcdc;
-    font-size: 22px;
-    transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
-  }
-  .bible-verses {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: #333;
-    font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px; /* Reduced padding */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form title */
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+/* Style the form labels */
+.form-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style the form inputs */
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 10px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.form-container input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Add hover effect to the submit button */
+.form-container input[type="submit"]:hover {
+  background-color: #555;
+  color:#78dcdc;
+  font-size: 22px;
+  transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+}
+.bible-verses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .bible-verses li {
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 22px;
-    line-height: 1.5;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
 }
