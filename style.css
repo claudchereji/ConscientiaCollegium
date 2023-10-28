@@ -322,7 +322,7 @@ footer {
 button[disabled] {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #8c3434; /* Use a different background color for disabled state */
+  background-color: #be3838; /* Use a different background color for disabled state */
   color: #fff; /* Adjust text color for disabled state */
   border: none;
   border-radius: 5px;
@@ -335,10 +335,36 @@ button[disabled] {
 /* Add hover effect for both buttons */
 .back-button:hover,
 button[disabled]:hover {
-  background-color: #262020;
+  background-color: #888888;
   font-size: 22px; /* Increase font size on hover */
   color: #78dcdc; /* Change text color to white on hover */
+  border: 2px solid rgb(51, 51, 51); /* Add a white border with a 2px width */
 }
+
+
+/* Apply the styling for the disabled button to the custom-button class */
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8c3434; /* Use a different background color for the button */
+  color: #fff; /* Adjust text color for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer */
+  margin: 10px 5px;
+  font-size: 18px;
+  transition: font-size 0.3s, color 0.3s; /* Add a transition for smooth hover effect */
+}
+
+/* Add hover effect for the custom button */
+.custom-button:hover {
+  background-color: #dddddd;
+  font-size: 22px; /* Increase font size on hover */
+  color: #279e9e; /* Change text color to white on hover */
+  border: 2px solid black; /* Add a black border with a 2px width */
+  border-radius: 5px;
+}
+
 
 
 /* Style the form container */
